@@ -4,35 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <title>BarberChap - Agendamento</title>
 
     <link rel="stylesheet" type="text/css" href="layoutagendamento.css">
-
+    
 
 
 </head>
 <body>
    
-    <header> 
-        <h1>Agendamento</h1>
-    </header><br><br>
+    <header id="home">
+        <a href="index.html"><img src="img/barberchap2.png"></a>
+        <p>Venha nos conhecer e renove seu visual com a gente!</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#sobre-nos">Sobre</a>
+            <a href="#sessao-servicos">Serviços</a>
+            <a href="#sessao-galeria">Galeria</a>
+            <a href="#sessao-contato">Contato</a>
+            <a href="agendamento.html" target="_blank">Agendamento</a>
+        </nav>
+    </header>
+
+    <h2>Agendamento</h2>
 
     <section>
-      
+        
+
       <form action="cadastro.php"  method="POST">
         <br>
             <label class="labelform" for="nome">Nome:</label><br>
-                <input type="text" id="nome" name="nome" size="50px" required><br><br>
+                <input type="text" id="nome" name="nome" size="50px" placeholder="Digite seu primeiro nome" required><br><br>
 
             <label class="labelform" for="sobrenome">Sobrenome:</label><br>
-                <input type="text" id="sbnome" name="sobrenome" size="50px" required><br><br>
+                <input type="text" id="sbnome" name="sobrenome" size="50px" placeholder="Digite seu sobrenome" required><br><br>
 
             <label class="labelform" for="telefone">Telefone:</label><br>
-                <input type="text" id="telefone" name="telefone" size="30px" required><br><br>
+                <input type="text" id="telefone" name="telefone" size="30px" placeholder="Digite seu telefone com DDD" required><br><br>
 
             <label class="labelform" for="email">E-mail:</label><br>
-                <input type="email" id="email" name="email" size="50px" required><br><br>
+                <input type="email" id="email" name="email" size="50px" placeholder="email@email.com.br" required><br><br>
 
             <label class="labelform" for="data">Data:</label><br>
                 <input type="date" id="data" name="data" required><br><br>
@@ -50,20 +62,28 @@
                 <input type="checkbox" id="servico4" name="servico4" value="CorteEstilizado">
                 <label for="servico4">Corte Estilizado</label><br>
                 <input type="checkbox" id="servico5" name="servico5" value="Escova">
-                <label for="servico3">Escova</label><br><br>
+                <label for="servico3">Escova</label><br>
+                <input type="checkbox" id="servico6" name="servico6" value="Sobrancelha">
+                <label for="servico6">Sobrancelha</label><br><br>
             
             <label class="labelform" for="profissional">Selecione o profissional:</label><br><br>
-                <input type="radio" id="profissional" name="barberAgendado" value="GabrielM">Gabriel Medeiros<br>
-                <input type="radio" id="profissional" name="barberAgendado" value="LucasC">Lucas Costa<br>
-                <input type="radio" id="profissional" name="barberAgendado" value="HenriqueS">Henrique Souza<br><br>
+                <input type="radio" id="profissional" name="barberAgendado" value="GabrielM"><label for="profissional1">Gabriel Medeiros</label><br>
+                <input type="radio" id="profissional" name="barberAgendado" value="LucasC"><label for="profissional2">Lucas Costa</label><br>
+                <input type="radio" id="profissional" name="barberAgendado" value="HenriqueS"><label for="profissional3">Henrique Souza</label><br><br>
 
             
-                <button>Enviar</button>   
+                <input type="submit" value="Agendar" class="btnAgendar">   
     
     </form>
        
 </section>
 
+<footer>
+    <p>BarberChap 2022. Todos os direitos reservados</p>
+    <a id="link-topo" href="#home">
+     <i class="fas fa-arrow-up" ><img src="img/upseta.png"></i>
+ </a>
+ </footer>
 
 </body>
 </html>

@@ -1,50 +1,134 @@
-/* Fontes */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-body{
-    background-image: url("imgagenda/fundo3.png");    
+*{
+    margin: 0;
+    --font-titprincipal: 'Bebas Neue', cursive;
+    --font-titgerais:'Inter', sans-serif;
+    --font-geral:'Roboto', sans-serif;
+    text-decoration: none;
+    
 }
 
 header{
-    margin-left: 5%;
-}
-
-form{
-    font-family: 'Roboto', sans-serif;
-    font-size: 17px;
-    color: black;
-     
-}
-
-header, form{
-    background-image: linear-gradient(to right, #fff, #ddd);
-    width: 50%;
-    border-radius: 5px;    
-
-}
-
-header h1{
-    background: -webkit-linear-gradient(#023047, #219ebc);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;    
-    margin-left: 10%;
-    padding: 10px;
-    font-size: 50px;
-    background-color: #000;
-    font-family: 'Bebas Neue', cursive;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/fundo3.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
     
+}
+/*
+header h1{
+    font-family: var(--font-titprincipal);
+    font-size: 3em;
+    position: absolute;
+    color: white;
+    left: 10%;
+    top: 100px;
+    opacity: 0;
+    animation: moveBanner 2s 0.5s forwards;
+    text-shadow: 5px 5px 5px #144663;
+}
+*/
+
+header img{
+    left: 450px;
+    position: relative;
+    top: 17px;
+}
+
+header p{
+    font-family: var(--font-geral);
+    position: absolute;
+    left: 10%;
+    color: white;
+    font-size: 1.3em;
+    opacity: 0;
+    animation: moveBanner 2s 0.5s forwards;
+    top: 170px;
+    padding-top: 15%;
+}
+nav{
+    position: absolute;
+    left: 9%;
+    top: 300px;
+    opacity: 0;
+    animation: moveBanner 2s 0.5s forwards;
+    padding-top: 10%;
+
+}
+nav a{
+    font-size: 1.3em;
+    color: white;
+    font-family: var(--font-titgerais);
+    padding: 10px;
+    transition: 1s;
+    text-shadow: 5px 5px 5px black;
+    border: 1px solid #218da6;
+}
+nav a:hover{
+    color: #218da6;
+    font-size: 1.5em;
+    transition: 1s;
+    text-shadow: 3px 3px 3px #144663;
+    
+}
+@keyframes moveBanner{
+    0%{
+        transform:translateY(10rem) rotateY(-200deg) ;
+    }
+    100%{
+        transform: translatey(0) rotatey(0);
+        opacity: 1;
+    }
+}
+
+h2{
+    font-family: var(--font-titprincipal);
+    font-size: 2.5em;
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px 10px  #144663;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #000000;
 }
 
 section{
     display: flex; 
     justify-content: center;
+    background-color: #1b1a1afc;
+}
+
+form{
+    width: 700px;
+    /*Efeito vidro*/
+    background: #f7f4f4fa;
+    box-shadow: 0 8px 32px 0 #218da6;
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+input{
+    border-radius: 5px;
+
 }
 
 input, label{
     margin-left: 5%;
-    
+    font-family: var(--font-titgerais);
+    color: black
 }
 
 input[type=checkbox]{
@@ -56,17 +140,60 @@ input[type=checkbox]{
     font-weight: bolder;
 }
 
-.botaoEnviar{
+.btnAgendar{
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     color: white;
     font-weight: bolder;
     cursor: pointer;
-    background-image: linear-gradient(to right, #023047, #219ebc);
+    background-image: linear-gradient(to right, #144663, #218da6);
     width: 120px;
     height: 45px;
-    margin-bottom: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     box-shadow: 4px 3px 2px #0000009f;
     border: solid 1px #0000
+
+}
+
+footer{
+    font-family: var(--font-geral);
+    color: white;
+    width: 100%;
+    height: 7rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#link-topo{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background: #080808;  
+      
+    background: linear-gradient(to right, #0a0a0a, #454646);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0.1rem 0.6rem  black;
+
+}
+#link-topo:hover{
+    font-family: var(--font-geral);
+      
+    background: linear-gradient(to right, #454646,#0a0a0a );
+}
+button{
+    font-family: var(--font-geral);
+    color: white;
+    background: linear-gradient(to right, #0a0a0a, #454646);
+}
+button:hover{
+    background: linear-gradient(to right, #454646,#0a0a0a );
 
 }

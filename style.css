@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Oswald:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Oswald:wght@500&family=Roboto+Condensed:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Italianno&family=Oswald:wght@500&family=Roboto+Condensed:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 *{
     margin: 0;
-    --font-titprincipal: 'Oswald', sans-serif;
-    --font-titgerais:'Roboto Condensed', sans-serif;
-    --font-geral:'Fira Sans', sans-serif;
+    --font-titprincipal: 'Bebas Neue', cursive;
+    --font-titgerais:'Inter', sans-serif;
+    --font-geral:'Roboto', sans-serif;
     text-decoration: none;
     
 }
@@ -19,8 +20,16 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.653);
+    
 }
+
+header img{
+    left: 450px;
+    position: relative;
+    top: 17px;
+    
+}
+/*
 header h1{
     font-family: var(--font-titprincipal);
     font-size: 3em;
@@ -29,10 +38,15 @@ header h1{
     left: 10%;
     top: 100px;
     opacity: 0;
+
     animation: moveBanner 2s 0.5s forwards;
+    text-shadow: 5px 5px 5px #144663;
+    
 }
+
+*/
 header p{
-    font-family: var(--font-titgerais);
+    font-family: var(--font-geral);
     position: absolute;
     left: 10%;
     color: white;
@@ -40,13 +54,15 @@ header p{
     opacity: 0;
     animation: moveBanner 2s 0.5s forwards;
     top: 170px;
+    padding-top: 15%;
 }
 nav{
     position: absolute;
-    left: 10%;
+    left: 9%;
     top: 300px;
     opacity: 0;
     animation: moveBanner 2s 0.5s forwards;
+    padding-top: 10%;
 
 
 }
@@ -57,12 +73,14 @@ nav a{
     padding: 10px;
     transition: 1s;
     text-shadow: 5px 5px 5px black;
+    border: 1px solid #218da6;
 }
+
 nav a:hover{
-    color: red;
+    color: #218da6;
     font-size: 1.5em;
     transition: 1s;
-    text-shadow: 3px 3px 3px rgba(255, 0, 0, 0.305);
+    text-shadow: 3px 3px 3px #144663;
     
 }
 @keyframes moveBanner{
@@ -101,24 +119,29 @@ nav a:hover{
     overflow: hidden;
 }
 #sobre-nos h1{
-    font-family: var(--font-titgerais);
-    font-size: 24pt;
+    font-family: var(--font-titprincipal);
+    font-size: 2.5em;
     font-weight: bolder;
-    text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.118);
+    text-shadow: 5px 5px 5px #144663;
+    padding-top: 2%;
 }
+
 #texto{
     font-family: var(--font-geral);
     height: 80%;
     padding: 10px;
     text-align: justify;
     border: solid white;
-    font-weight: bolder;
+    font-weight: normal;
+    position: relative;
+    top: 18.0302px;
+    
 }
 
 #sessao-servicos{
     background-color: white;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background-color: rgba(27, 26, 26, 0.99);
     /*background-image: url("imagens/fundo-serv-principais.png");
     background-position: center center;
@@ -127,13 +150,15 @@ nav a:hover{
     
 }
 #sessao-servicos h2{
-    font-family: var(--font-titgerais);
-    font-size: 2em;
+    font-family: var(--font-titprincipal);
+    font-size: 2.5em;
     text-align: center;
     color: white;
     font-weight: 24pt;
-    
+    padding-top: 2%;
+    text-shadow: 5px 5px 5px #144663;
 }
+
 #servicos{
    
    text-align: center;
@@ -161,7 +186,7 @@ nav a:hover{
     padding-top: 50px;
     font-family: var(--font-geral);
     font-weight: bolder;
-    color: red;
+    color: #218da6;
 } .card-servicos2 button{
     margin-top: 10px;
    width: 150px; 
@@ -170,6 +195,7 @@ nav a:hover{
    font-family: var(--font-geral);
    font-weight: bolder;
    cursor: pointer;
+   
 }
 #sessao-galeria{ 
     background-color: aqua;
@@ -180,11 +206,12 @@ nav a:hover{
     
 }
 #sessao-galeria h2{
-    font-family: var(--font-titgerais);
-    font-size: 2em;
+    font-family: var(--font-titprincipal);
+    font-size: 2.5em;
     text-align: center;
     color: white;
-    text-shadow: 5px 5px 10px  black;
+    text-shadow: 5px 5px 10px  #144663;
+    padding-top: 2%;
 }
 .galeria{
     text-align: center;
@@ -244,8 +271,10 @@ nav a:hover{
 
 #sessao-contato h2{
     color: white;
-    font-family: var(--font-titgerais);
-    font-size: 2em;
+    font-family: var(--font-titprincipal);
+    font-size: 2.5em;
+    padding-top: 2%;
+    text-shadow: 5px 5px 10px  #144663;
     
     
 }
@@ -266,7 +295,15 @@ nav a:hover{
     height: 250px;
     background-color: transparent;
     font-family: var(--font-geral);
+    position: relative;
+    left: 74.109px;
+    top: -22.53px;
     
+}
+
+.card-info2 h3{
+    position: relative;
+    top: 12.98px;
 }
 .card-info3{
     padding: 10px;
@@ -274,8 +311,10 @@ nav a:hover{
     width: 30%;
     height: 250px;
     background-color: transparent;
-   
     font-family: var(--font-geral);
+    top: -10.53px;
+    position: relative;
+    left: 28.327px;
 }
 
 footer{
