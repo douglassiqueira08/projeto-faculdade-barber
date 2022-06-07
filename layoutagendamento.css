@@ -1,0 +1,72 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+    background-image: url("imgagenda/fundo3.png");    
+}
+
+header{
+    margin-left: 5%;
+}
+
+form{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: black;
+     
+}
+
+header, form{
+    background-image: linear-gradient(to right, #fff, #ddd);
+    width: 50%;
+    border-radius: 5px;    
+
+}
+
+header h1{
+    background: -webkit-linear-gradient(#023047, #219ebc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+    margin-left: 10%;
+    padding: 10px;
+    font-size: 50px;
+    background-color: #000;
+    font-family: 'Bebas Neue', cursive;
+    
+}
+
+section{
+    display: flex; 
+    justify-content: center;
+}
+
+input, label{
+    margin-left: 5%;
+    
+}
+
+input[type=checkbox]{
+    accent-color: #023047;
+    ;
+}
+
+.labelform{
+    font-weight: bolder;
+}
+
+.botaoEnviar{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #023047, #219ebc);
+    width: 120px;
+    height: 45px;
+    margin-bottom: 5%;
+    box-shadow: 4px 3px 2px #0000009f;
+    border: solid 1px #0000
+
+}
