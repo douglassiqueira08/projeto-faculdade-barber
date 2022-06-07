@@ -7,6 +7,7 @@
     --font-titgerais:'Roboto Condensed', sans-serif;
     --font-geral:'Fira Sans', sans-serif;
     text-decoration: none;
+    
 }
 
 header{
@@ -218,7 +219,6 @@ nav a:hover{
 }
 #cont-pag{
     margin-top: 100px;
-    position: absolute;
     left: 5%;
     width: 90%;
     height: 100%;
@@ -236,7 +236,7 @@ nav a:hover{
     background-color: rgba(27, 26, 26, 0.99);
     width: 100%;
     text-align: center;
-    position: absolut;
+    
     
     
     
@@ -247,6 +247,7 @@ nav a:hover{
     font-family: var(--font-titgerais);
     font-size: 2em;
     
+    
 }
 .card-info1{
     padding: 10px;
@@ -254,7 +255,6 @@ nav a:hover{
     width: 30%;
     height: 250px;
     background-color: transparent;
-    
     font-family: var(--font-geral);
     
     
@@ -265,7 +265,6 @@ nav a:hover{
     width: 30%;
     height: 250px;
     background-color: transparent;
-   
     font-family: var(--font-geral);
     
 }
@@ -278,26 +277,32 @@ nav a:hover{
    
     font-family: var(--font-geral);
 }
-#maps{
-    
-    width: 400px;
-    height: 250px;
-    background-color: white;
-    position: absolute;
-    top: 300px;
-    
-    
-    
-}
-#sessao4{
-    position: absolute;
-    text-align: center;
-    align-items: center;
-}
 
 footer{
+    font-family: var(--font-geral);
+    color: white;
+    width: 100%;
+    height: 7rem;
     background-color: black;
-    width: 200px;
-    height: 200px;
-    position: absolute
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+#link-topo{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background: #080808;  
+    background: -webkit-linear-gradient(to right, #080808, #424242);  
+    background: linear-gradient(to right, #0a0a0a, #454646);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0.1rem 0.6rem  black;
+
+}
+
