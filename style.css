@@ -295,7 +295,7 @@ footer{
     width: 3rem;
     height: 3rem;
     background: #080808;  
-    background: -webkit-linear-gradient(to right, #080808, #424242);  
+      
     background: linear-gradient(to right, #0a0a0a, #454646);
     display: flex;
     justify-content: center;
@@ -303,6 +303,20 @@ footer{
     color: white;
     border-radius: 10px;
     box-shadow: 0 0.1rem 0.6rem  black;
+
+}
+#link-topo:hover{
+    font-family: var(--font-geral);
+      
+    background: linear-gradient(to right, #454646,#0a0a0a );
+}
+button{
+    font-family: var(--font-geral);
+    color: white;
+    background: linear-gradient(to right, #0a0a0a, #454646);
+}
+button:hover{
+    background: linear-gradient(to right, #454646,#0a0a0a );
 
 }
 
