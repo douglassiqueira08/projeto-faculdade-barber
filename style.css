@@ -11,6 +11,10 @@
     
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     background-color: black;
     width: 100%;
@@ -28,6 +32,10 @@ header img{
     position: relative;
     top: 17px;
     
+}
+
+header img:hover{
+    transform: scale(1.05);
 }
 /*
 header h1{
@@ -70,7 +78,7 @@ nav a{
     font-size: 1.3em;
     color: white;
     font-family: var(--font-titgerais);
-    padding: 10px;
+    padding: 15px;
     transition: 1s;
     text-shadow: 5px 5px 5px black;
     border: 1px solid #218da6;
@@ -83,6 +91,7 @@ nav a:hover{
     text-shadow: 3px 3px 3px #144663;
     
 }
+
 @keyframes moveBanner{
     0%{
         transform:translateY(10rem) rotateY(-200deg) ;
@@ -120,7 +129,7 @@ nav a:hover{
 }
 #sobre-nos h1{
     font-family: var(--font-titprincipal);
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: bolder;
     text-shadow: 5px 5px 5px #144663;
     padding-top: 2%;
@@ -151,7 +160,7 @@ nav a:hover{
 }
 #sessao-servicos h2{
     font-family: var(--font-titprincipal);
-    font-size: 2.5em;
+    font-size: 3em;
     text-align: center;
     color: white;
     font-weight: 24pt;
@@ -178,10 +187,24 @@ nav a:hover{
    
 }
 .card-servicos h3{
-    
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-family: var(--font-titgerais);
 }
+
+.card-servicos p{
+    font-size: 1.5em;
+    border: 2px solid #218da6;
+    width: 150px;
+    position: relative;
+    left: 57.3904px;
+    font-family: var(--font-titprincipal);
+    
+}
+
+.card-servicos p:hover{
+    transform: scale(1.3);
+}
+
 .card-servicos2{
     padding-top: 50px;
     font-family: var(--font-geral);
@@ -207,7 +230,7 @@ nav a:hover{
 }
 #sessao-galeria h2{
     font-family: var(--font-titprincipal);
-    font-size: 2.5em;
+    font-size: 3em;
     text-align: center;
     color: white;
     text-shadow: 5px 5px 10px  #144663;
@@ -272,7 +295,7 @@ nav a:hover{
 #sessao-contato h2{
     color: white;
     font-family: var(--font-titprincipal);
-    font-size: 2.5em;
+    font-size: 3em;
     padding-top: 2%;
     text-shadow: 5px 5px 10px  #144663;
     
