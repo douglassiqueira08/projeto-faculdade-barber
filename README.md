@@ -4,6 +4,7 @@
 <p>Este projeto consiste em uma página institucional de uma barbearia fictícia, desenvolvida como trabalho da disciplina de Projeto Prático em Sistemas do Prof. Daniel Ferreira de Barros Junior. </p>
 
 <h1></h1>
+<h2>https://douglassiqueira08.github.io/projeto-faculdade-barber/</h2>
 
 ## 👨‍💻 Membros do grupo
 
